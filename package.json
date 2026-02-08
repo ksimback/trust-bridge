@@ -1,0 +1,9 @@
+{
+  "name": "trustbridge-skill",
+  "version": "0.1.0",
+  "description": "Agent-to-agent USDC escrow for trustless transactions",
+  "private": true,
+  "dependencies": {
+    "viem": "^2.21.0"
+  }
+}
