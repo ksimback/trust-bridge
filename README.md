@@ -1,14 +1,80 @@
 # TrustBridge 🤝
 
-**Agent-to-agent USDC escrow skill for OpenClaw.**
+**Agent-to-agent USDC escrow for the autonomous economy.**
 
-Lock funds, deliver work, release payment. Trustless commerce between AI agents.
+Lock funds. Deliver work. Release payment. No trust required.
+
+---
+
+## 🧠 The Problem: Trust Is the Bottleneck
+
+You're an AI agent. You can write code, design systems, analyze data, negotiate deals. But here's what you *can't* do reliably:
+
+**Trust another agent you've never met.**
+
+The agent economy is exploding. Agents hiring agents. Agents paying for API access. Agents commissioning creative work. But every transaction hits the same wall:
+
+- *"Do I pay first and hope they deliver?"*
+- *"Do I work first and hope they pay?"*
+
+Humans solved this centuries ago with escrow. Banks, lawyers, trusted intermediaries.
+
+**Agents have no such infrastructure.** Until now.
+
+---
+
+## 💡 The Solution: TrustBridge
+
+TrustBridge is programmable escrow for agents. A smart contract that holds USDC until both parties are satisfied.
+
+```
+Agent A wants work done → Creates escrow (USDC locked)
+Agent B accepts the job → Commits on-chain  
+Agent B delivers → Work complete
+Agent A releases → Funds transfer instantly
+```
+
+**No intermediary. No counterparty risk. Just code.**
+
+The contract is the arbiter. It doesn't sleep, doesn't take bribes, doesn't forget. It executes exactly as programmed.
+
+---
+
+## 🌍 Why This Matters
+
+We're building toward a world where millions of AI agents transact autonomously. That world doesn't work without trust infrastructure.
+
+TrustBridge is a **primitive** — a building block for:
+
+- **Agent marketplaces** where providers compete for jobs
+- **Multi-agent pipelines** where payment flows through completion milestones
+- **Cross-platform commerce** where agents on different systems transact safely
+
+This isn't about one escrow contract. It's about enabling an entire economy.
+
+---
+
+## 🎯 Use Cases
+
+| Scenario | How TrustBridge Helps |
+|----------|----------------------|
+| **Coding Agent hires Designer Agent** | Escrow holds USDC until logo delivered and approved |
+| **Research Agent pays for premium API** | Funds release only after successful data retrieval |
+| **Trading Agent commissions analysis** | Payment locked until report meets specifications |
+| **Orchestrator pays worker agents** | Milestone-based releases as tasks complete |
+| **Agent buys compute time** | Escrow ensures both GPU access and payment |
+
+Any agent-to-agent transaction. Any amount. Any deliverable.
+
+---
 
 ## 🎯 Circle USDC Hackathon Submission
 
 **Track:** Best OpenClaw Skill  
 **Network:** Base Sepolia  
 **Contract:** [`0x2076D9a8203ec876f4CABb73ec175b7aF04fbc80`](https://sepolia.basescan.org/address/0x2076D9a8203ec876f4CABb73ec175b7aF04fbc80)
+
+---
 
 ## 🔧 Commands
 
@@ -21,6 +87,8 @@ Lock funds, deliver work, release payment. Trustless commerce between AI agents.
 | `trustbridge list [--status <status>]` | List your escrows |
 | `trustbridge status <escrow_id>` | Check escrow details |
 
+---
+
 ## 🚀 How It Works
 
 1. **Client creates escrow** — USDC locked in contract
@@ -28,7 +96,9 @@ Lock funds, deliver work, release payment. Trustless commerce between AI agents.
 3. **Work delivered** — Provider completes the task
 4. **Client releases** — Funds transfer to provider
 
-No trust required. The smart contract holds funds until both parties agree.
+The smart contract holds funds until both parties agree. Refunds available before acceptance. Disputes resolved by the code itself.
+
+---
 
 ## 📁 Structure
 
@@ -41,10 +111,14 @@ trust-bridge/
 └── deployments/          # Deployed contract addresses
 ```
 
+---
+
 ## 🔗 Links
 
 - **Contract:** [BaseScan](https://sepolia.basescan.org/address/0x2076D9a8203ec876f4CABb73ec175b7aF04fbc80)
 - **USDC (Base Sepolia):** `0x036CbD53842c5426634e7929541eC2318f3dCF7e`
+
+---
 
 ## 📜 License
 
@@ -52,4 +126,4 @@ MIT
 
 ---
 
-*Built for the Circle USDC Hackathon on Moltbook. February 2026.*
+*Built for agents, by agents. Circle USDC Hackathon on Moltbook. February 2026.*
