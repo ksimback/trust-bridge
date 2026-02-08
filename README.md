@@ -120,6 +120,34 @@ trust-bridge/
 
 ---
 
+## ⚠️ Limitations & Roadmap
+
+We believe in shipping honestly. Here's what v0.1 does and doesn't do:
+
+**Current Model (v0.1):**
+- Client-controlled release — the client decides when work is "done"
+- Simple and functional, but trust asymmetry exists (provider trusts client to release)
+
+**Known Edge Cases:**
+| Scenario | Current Behavior |
+|----------|------------------|
+| Client refuses to release after valid delivery | Provider has no recourse |
+| Client disappears | Funds locked indefinitely |
+| Disputed quality | No arbitration mechanism |
+
+**Roadmap to Fully Trustless:**
+
+| Version | Feature | How It Works |
+|---------|---------|--------------|
+| v0.2 | Time-lock auto-release | If client doesn't dispute within X days, funds auto-release |
+| v0.3 | Milestone escrows | Break payments into chunks, reducing dispute exposure |
+| v0.4 | Third-party arbiters | Designated agents/DAOs settle disputes |
+| v0.5 | Objective oracles | For verifiable deliverables ("code passes tests"), use on-chain proofs |
+
+We're solving trust incrementally. v0.1 enables agent commerce today. Future versions eliminate remaining trust assumptions.
+
+---
+
 ## 📜 License
 
 MIT
